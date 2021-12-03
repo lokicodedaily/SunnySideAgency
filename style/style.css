@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600;800&family=Fraunces:wght@700;900&display=swap");
 
 body {
   font-size: 62.5%;
@@ -25,7 +25,7 @@ body {
 #links {
   display: none;
   justify-content: space-between;
-  font-size : 1rem;
+  font-size: 1rem;
 }
 
 a {
@@ -54,10 +54,9 @@ a {
   margin-top: 6rem;
   font-size: 4rem;
   text-transform: uppercase;
-  font-family: "Fraunces" ;
+  font-family: "Fraunces";
   text-align: center;
 }
-
 
 .grid1x2 {
   display: grid;
@@ -87,7 +86,7 @@ a {
   width: 100%;
 }
 
-.order > div:first-child{
+.order > div:first-child {
   order: 2;
 }
 
@@ -95,12 +94,12 @@ a {
   width: 120px;
 }
 
-.body-link{
+.body-link {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1rem;
   border: 0;
-  font-family: 'Fraunces', sans-serif;
+  font-family: "Fraunces", sans-serif;
   display: block;
 }
 
@@ -123,11 +122,11 @@ a {
   background-color: #fad9d2;
 }
 
-.learn-more1:hover .underline1{
+.learn-more1:hover .underline1 {
   background-color: hsl(51, 100%, 49%);
 }
 
-.learn-more2:hover .underline2{
+.learn-more2:hover .underline2 {
   background-color: hsl(7, 99%, 70%);
 }
 
@@ -150,9 +149,10 @@ a {
   margin-bottom: 3rem;
 }
 
-#graphic, #photography {
+#graphic,
+#photography {
   display: flex;
-  align-items:flex-end;
+  align-items: flex-end;
   justify-content: center;
   text-align: center;
   padding: 0 3rem 0 3rem;
@@ -160,17 +160,17 @@ a {
 
 #testimonials-heading {
   text-align: center;
-  color:hsl(210, 4%, 67%);
+  color: hsl(210, 4%, 67%);
   font-size: 1.5rem;
   text-transform: uppercase;
-  font-family: 'Fraunces', sans-serif;
+  font-family: "Fraunces", sans-serif;
   letter-spacing: 2px;
   margin-top: 5rem;
 }
 
 /* testimonials */
 .testimonials-users {
-  display : flex;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -184,10 +184,11 @@ a {
   width: 60px;
 }
 
-.user-review, .user-job-position {
-  color : #818498;
+.user-review,
+.user-job-position {
+  color: #818498;
   font-size: 1rem;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   line-height: 1.5;
 }
 
@@ -200,7 +201,7 @@ a {
 
 .gallery {
   margin-top: 5rem;
-  display : grid;
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -209,3 +210,46 @@ a {
 }
 
 /* footer */
+#footer {
+  background: #90d4c5;
+  color: hsl(168, 34%, 41%);
+  text-align: center;
+  padding: 4rem 0;
+}
+
+#footer-logo {
+  font-size: 2rem;
+  font-family: "Barlow", sans-serif;
+  margin-bottom: 2.5rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.footer-links > a {
+  color: hsl(168, 34%, 41%);
+  font-size: 1rem;
+  font-family: "Barlow", sans-serif;
+  transition: color 0.5s;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 4rem;;
+  font-size: 1.4rem;
+}
+
+.fab{
+  transition: color .5s;
+}
+
+
+.footer-links > a:hover, .fab:hover{
+  cursor: pointer;
+  color: #fff;
+}
