@@ -4,6 +4,7 @@ body {
   font-size: 62.5%;
   box-sizing: border-box;
   font-family: "Barlow", sans-serif;
+  font-family: "Fraunces", sans-serif;
   margin: 0;
 }
 #header {
@@ -166,3 +167,45 @@ a {
   letter-spacing: 2px;
   margin-top: 5rem;
 }
+
+/* testimonials */
+.testimonials-users {
+  display : flex;
+  justify-content: space-between;
+}
+
+.user {
+  text-align: center;
+  padding: 2rem;
+}
+
+.user-img {
+  border-radius: 50%;
+  width: 60px;
+}
+
+.user-review, .user-job-position {
+  color : #818498;
+  font-size: 1rem;
+  font-family: 'Barlow', sans-serif;
+  line-height: 1.5;
+}
+
+.user-name {
+  color: hsl(212, 27%, 19%);
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  margin-top: 2rem;
+}
+
+.gallery {
+  margin-top: 5rem;
+  display : grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-img {
+  width: 100%;
+}
+
+/* footer */
