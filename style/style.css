@@ -18,14 +18,50 @@ body {
 #navbar {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   padding: 1rem;
 }
 
-#links {
-  display: none;
-  justify-content: space-between;
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.links > a {
+  color:hsl(206, 17%, 92%);
+  font-family: "Barlow", sans-serif;
   font-size: 1rem;
+}
+
+#contact{
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  text-transform: uppercase;
+  color: black;
+  font-family: "Fraunces";
+}
+
+#contact:hover {
+  background-color: #70cfff;
+  color: #fff;
+}
+
+#about, #services, #projects {
+  padding: 1rem 2rem;
+  border-radius: 30px;
+}
+
+#about:hover, #services:hover, #projects:hover {
+  background-color: #70cfff;
+
+}
+
+
+
+#hamburger {
+  display: none;
 }
 
 a {
@@ -37,13 +73,6 @@ a {
   text-align: center;
 }
 
-/* a:hover {
-  color: #000;
-  padding: 1rem;
-  cursor: pointer;
-  border: 1px solid #000;
-  background-color: #fff;
-} */
 
 #logo {
   width: 150px;
