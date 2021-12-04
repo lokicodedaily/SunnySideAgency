@@ -82,7 +82,7 @@ a {
 
 #headers_heading {
   color: #fff;
-  margin-top: 6rem;
+  margin-top: 5rem;
   font-size: 4rem;
   text-transform: uppercase;
   font-family: "Fraunces";
@@ -290,6 +290,8 @@ a {
   color: #fff;
 }
 
+
+
 @media screen and (max-width: 768px) {
   .links {
     display: none;
@@ -297,6 +299,10 @@ a {
 
   #hamburger {
     display: inline-block;
+  }
+
+  #headers_heading {
+    font-size: 3rem;
   }
 
   .grid1x2 {
@@ -321,5 +327,12 @@ a {
   .gallery {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  #headers_heading {
+    margin-top: 4rem;
   }
 }
