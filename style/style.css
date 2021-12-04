@@ -25,22 +25,23 @@ body {
 .links {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .links > a {
-  color:hsl(206, 17%, 92%);
+  color: hsl(206, 17%, 92%);
   font-family: "Barlow", sans-serif;
   font-size: 1rem;
 }
 
-#contact{
+#contact {
   background: #fff;
   padding: 1rem 2rem;
   border-radius: 30px;
   text-transform: uppercase;
   color: black;
   font-family: "Fraunces";
+  transition: background-color 0.5s;
 }
 
 #contact:hover {
@@ -48,17 +49,19 @@ body {
   color: #fff;
 }
 
-#about, #services, #projects {
+#about,
+#services,
+#projects {
   padding: 1rem 2rem;
   border-radius: 30px;
+  transition: background-color 0.5s;
 }
 
-#about:hover, #services:hover, #projects:hover {
+#about:hover,
+#services:hover,
+#projects:hover {
   background-color: #70cfff;
-
 }
-
-
 
 #hamburger {
   display: none;
@@ -72,7 +75,6 @@ a {
 #headers_body {
   text-align: center;
 }
-
 
 #logo {
   width: 150px;
@@ -149,6 +151,11 @@ a {
 
 .underline2 {
   background-color: #fad9d2;
+}
+
+.underline1,
+.underline2 {
+  transition: background-color 0.3s;
 }
 
 .learn-more1:hover .underline1 {
@@ -269,16 +276,50 @@ a {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-top: 4rem;;
+  margin-top: 4rem;
   font-size: 1.4rem;
 }
 
-.fab{
-  transition: color .5s;
+.fab {
+  transition: color 0.5s;
 }
 
-
-.footer-links > a:hover, .fab:hover{
+.footer-links > a:hover,
+.fab:hover {
   cursor: pointer;
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .links {
+    display: none;
+  }
+
+  #hamburger {
+    display: inline-block;
+  }
+
+  .grid1x2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .order > div:first-child{
+    order: 0;
+  }
+
+  #testimonials-heading {
+    margin-top: 6rem;
+  }
+
+  .testimonials-users {
+    flex-direction: column;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
