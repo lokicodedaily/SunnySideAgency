@@ -380,4 +380,8 @@ a {
   #graphic, #photography {
     padding: 0 1rem;
   }
+
+  .testimonials-users {
+    padding:0 1.5rem;
+  }
 }
