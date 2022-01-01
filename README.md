@@ -1,6 +1,6 @@
 # Frontend Mentor - Sunnyside agency landing page
 
-![Design preview for the Sunnyside agency landing page coding challenge](https://lokicodedaily.github.io/SunnySideAgency/)
+[Design preview for the Sunnyside agency landing page coding challenge](https://lokicodedaily.github.io/SunnySideAgency/)
 
 ## Welcome! 👋
 
